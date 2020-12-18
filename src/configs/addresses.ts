@@ -1,5 +1,6 @@
 import registry from '@balancer-labs/assets/generated/dex/registry.homestead.json';
 import registryKovan from '@balancer-labs/assets/generated/dex/registry.kovan.json';
+import registryBSCMain from '../registry.bscmain.json';
 import { getSupportedChainName } from '../provider/connectors';
 
 function getContracts(chainName: string) {
@@ -21,6 +22,17 @@ function getContracts(chainName: string) {
             sorMulticall: '0x71c7f1086aFca7Aa1B0D4d73cfa77979d10D3210',
         };
     }
+    if (chainName === 'bscmain') {
+        return {
+            bFactory: '0x399fC17d8A4865f8fd38F2d8498FdFd8f022D6d4',
+            proxy: '0xbC8200f34c81d92220F06384a018d25aB3c3dF2c',
+            // this is really wbnb
+            weth: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+            multicall: '0x171ef6C262a6bA5D429b0E6fEe20889440654Cb4',
+            // this isn't deployed yet, inactive address
+            sorMulticall: '0x71c7f1086aFca7Aa1B0D4d73cfa77979d10D3210',
+        };
+    }
     return {};
 }
 
@@ -30,6 +42,9 @@ function getAssets(chainName: string) {
     }
     if (chainName === 'kovan') {
         return registryKovan;
+    }
+    if (chainName === 'bscmain') {
+        return registryBSCMain;
     }
     return {
         tokens: {},
