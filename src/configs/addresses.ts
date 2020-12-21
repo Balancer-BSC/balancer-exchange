@@ -27,8 +27,6 @@ function getContracts(chainName: string) {
             // this is really wbnb
             weth: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
             multicall: '0x171ef6C262a6bA5D429b0E6fEe20889440654Cb4',
-            // this isn't deployed yet, inactive address
-            sorMulticall: '0x71c7f1086aFca7Aa1B0D4d73cfa77979d10D3210',
         };
     }
     return {};
