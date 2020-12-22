@@ -1,5 +1,5 @@
-import fetch from 'isomorphic-fetch';
-import * as allPools from 'allPublicPools.json';
+// import fetch from 'isomorphic-fetch';
+// import * as allPools from 'allPublicPools.json';
 
 const SUBGRAPH_URL =
     process.env.REACT_APP_SUBGRAPH_URL ||
@@ -48,7 +48,7 @@ const HARDCODED_POOLS = {
             },
             {
                 id: '0xda66697d3f0865e0bf66b8d2a655b58e19c4e371',
-                publicSwap: false,
+                publicSwap: true,
                 swapFee: '0.001',
                 tokens: [
                     {
@@ -90,12 +90,12 @@ export async function getAllPublicSwapPools() {
             console.log(
                 `[SubGraph] Load Error - No Pools Returned. Defaulting To Backup List.`
             );
-            pools.pools = allPools.pools;
+            // pools.pools = allPools.pools;
         }
     } catch (error) {
         console.log(`[SubGraph] Load Error. Defaulting To Backup List.`);
         console.log(`[SubGraph] Error: ${error.message}`);
-        pools.pools = allPools.pools;
+        // pools.pools = allPools.pools;
     }
 
     return pools;
