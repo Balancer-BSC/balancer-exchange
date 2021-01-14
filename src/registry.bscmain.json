@@ -9,8 +9,8 @@
             "hasIcon": true,
             "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/info/logo.png"
         },
-        "0x3e77f48620c299583e11667b3f560356c681bc72": {
-            "address": "0x3e77f48620c299583e11667b3f560356c681bc72",
+        "0x3E77f48620c299583e11667B3F560356c681bC72": {
+            "address": "0x3E77f48620c299583e11667B3F560356c681bC72",
             "name": "fakeweth",
             "symbol": "FWETH",
             "decimals": 18,
@@ -18,8 +18,8 @@
             "hasIcon": false,
             "logoUrl": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
         },
-        "0x858079cebf5f88eca7a46b582951c4464c13ec54": {
-            "address": "0x858079cebf5f88eca7a46b582951c4464c13ec54",
+        "0x858079cEBf5f88EcA7a46B582951C4464c13EC54": {
+            "address": "0x858079cEBf5f88EcA7a46B582951C4464c13EC54",
             "name": "fakedai",
             "symbol": "FDAI",
             "decimals": 18,
