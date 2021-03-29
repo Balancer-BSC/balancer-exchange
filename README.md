@@ -28,3 +28,7 @@
     yarn build
     yarn start
     ```
+
+## References
+
+<https://dev.to/mubbashir10/containerize-react-app-with-docker-for-production-572b>
